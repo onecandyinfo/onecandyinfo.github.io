@@ -24,7 +24,7 @@
     <script>
 $(function(){
 	$('.fadein img:gt(0)').hide();
-	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 10);
+	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 2);
 });
 </script>
 
@@ -40,7 +40,7 @@ $(function(){
     var rand = Math.floor(Math.random() * ($('.faderandom').children().length-1));
     $('.faderandom > :first-child').appendTo('.faderandom').fadeOut();
     $('.faderandom > *').eq(rand).prependTo('.faderandom').fadeIn();
-  }, 3000);
+  }, 300);
 });
 </script>
 <div class="faderandom">
