@@ -18,6 +18,15 @@
 
 .multipleslides { position:center; height:332px; width:500px; float:center; }
 .multipleslides > * { position:absolute; left:0; top:0; display:block; }
+	    
+	    
+	    .alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
 	  </style>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -51,9 +60,13 @@ $(function(){
   <img src="https://onecandy.biz/EVER_GREEN.svg"></a>
   <img src="https://onecandy.biz/EARL_GREY.svg"></a>
   <img src="https://onecandy.biz/GENIUS_BLUEBERRY.svg"></a>
-
-  
-
 </div>
+
+<div id="textbox">
+  <p class="alignleft">Text on the left.</p>
+  <p class="alignright">Text on the right.</p>
+	<div style="clear: both;"></div>
+</div>
+
   </body>
 </html>
