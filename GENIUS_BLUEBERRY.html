@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GENIUS BLUEBERRY | ONECANDY.BIZ</title>
+    <style>
+      h2 {text-align: center;}
+     .aligncenter {
+    text-align: center;
+}
+
+      body {font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+
+.fadein { position:center; height:332px; width:500px; }
+.fadein img { position:absolute; left:0; top:0; }
+
+.fadelinks, .faderandom { position:center; height:332px; width:500px; }
+.fadelinks > *, .faderandom > * { position:absolute; left:0; top:0; display:block; }
+
+.multipleslides { position:center; height:332px; width:500px; float:center; }
+.multipleslides > * { position:absolute; left:0; top:0; display:block; }
+	    
+	    .alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+	    
+	    a:link { /* Essentially means a[href], or that the link actually goes somewhere */
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: grey;
+}
+a:active {
+  color: grey;
+}
+	    
+	    mark {
+  background-color: black;
+  color: black;
+}
+	  </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+$(function(){
+	$('.fadein img:gt(0)').hide();
+	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 5);
+});
+</script>
+
+  </head>
+  <body>
+    <div>
+	    <h2>ONECANDY.BIZ</h2>
+
+<script>
+  $(function(){
+  $('.faderandom > :gt(0)').hide();
+  setInterval(function(){
+    var rand = Math.floor(Math.random() * ($('.faderandom').children().length-1));
+    $('.faderandom > :first-child').appendTo('.faderandom').fadeOut();
+    $('.faderandom > *').eq(rand).prependTo('.faderandom').fadeIn();
+  }, 400);
+});
+</script>
+	    <div id="textbox">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<h2 class="alignleft">
+	INGREDIENTS<br><br>
+PROTEIN CHOCOLATE BLEND (CRISPS [SOY PROTEIN ISOLATE, RICE FLOUR*, ALKALIZED COCOA*], ROLLED OATS*, ROASTED SOYBEANS*, SOY FLOUR*), BROWN RICE SYRUP*, CANE SUGAR*, CHICORY FIBER SYRUP, VEGETABLE GLYCERIN, HIGH OLEIC SUNFLOWER OIL*, ALKALIZED COCOA*, PALM KERNEL OIL, UNSWEETENED CHOCOLATE*, PALM KERNEL SOLIDS*, SOY FLOUR*, NATURAL FLAVORS, SOY LECITHIN*, SEA SALT, BEET JUICE CONCENTRATE (FOR COLOR)*.
+<br>*ORGANIC INGREDIENT</h2>
+		    WEIGHT<br><br>
+		    MAY VARY ACCORDING ON FLAVOR (<em>FOUNTAIN OF YOUTH,</em> <em>GENIUS BLUEBERRY</em>, <em>EARL GREY</em>, <em>EVER GREEN</em>)<br><br>
+		    PATTERN<br><br>
+		    (<em>STARRED</em>)<br><br><br><br><br><br>
+		    For nutrition information call 1-800-ONE-CNDI<br><br>
+		    ADDRESS: <mark>1283 Candy Lane</mark><br>
+		    MADE IN LOS ANGELES CA<br><br><br><br><br><br>
+		    
+		    EMBOSSED CHOCOLATE
+		    
+	<h2 class="alignright">FOUNTAIN OF YOUTH<br>✓YOUR ORDER IS CONFIRMED</h2>
+	
+	<div style="clear: both;"></div>
+</div>
+
+	    
+<div class="faderandom">
+  <img src=""></a>
+</div>
+  </body>
+</html>
