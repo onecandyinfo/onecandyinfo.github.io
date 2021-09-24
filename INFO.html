@@ -1,0 +1,99 @@
+<!--  
+Hello, world! I am a Michael.
+michaelseh.com
+--> 
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>INFO | ONECANDY.BIZ</title>
+    <style>
+      h2 {text-align: center;}
+     .aligncenter {
+    text-align: center;
+}
+
+      body {font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+
+.fadein { position:center; height:332px; width:500px; }
+.fadein img { position:absolute; left:0; top:0; }
+
+.fadelinks, .faderandom { position:center; height:332px; width:500px; }
+.fadelinks > *, .faderandom > * { position:absolute; left:0; top:0; display:block; }
+
+.multipleslides { position:center; height:332px; width:500px; float:center; }
+.multipleslides > * { position:absolute; left:0; top:0; display:block; }
+	    
+	    .alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+	    
+	    a:link { /* Essentially means a[href], or that the link actually goes somewhere */
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: grey;
+}
+a:active {
+  color: grey;
+}
+	  </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+$(function(){
+	$('.fadein img:gt(0)').hide();
+	setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 5);
+});
+</script>
+
+  </head>
+  <body>
+    <div>
+	    <h2>ONECANDY.BIZ</h2>
+
+<script>
+  $(function(){
+  $('.faderandom > :gt(0)').hide();
+  setInterval(function(){
+    var rand = Math.floor(Math.random() * ($('.faderandom').children().length-1));
+    $('.faderandom > :first-child').appendTo('.faderandom').fadeOut();
+    $('.faderandom > *').eq(rand).prependTo('.faderandom').fadeIn();
+  }, 400);
+});
+</script>
+	    <div id="textbox">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<h2 class="alignleft">
+	1. Can I choose what ONE CANDY I receive?<br>
+	No, the website gives you a random ONE CANDY.<br><br>
+	2. Where is ONE CANDY available?<br>
+	US for now.<br><br>
+	3. When will I receive my ONE CANDY?<br>
+	ONE CANDY will ship this fall. Check back for more info.<br><br>
+	4. What are the shipping options?<br>
+	Express (2 business days).<br><br>
+	5. How do I get support?<br>
+	Reach out to  [onecandyinfo@protonmail.com].</h2>
+	<h2 class="alignright">ORDER NOW</a></h2>
+	
+	<div style="clear: both;"></div>
+</div>
+
+	    
+<div class="faderandom">
+  <img src="https://onecandy.biz/FOUNTAIN_OF_YOUTH.svg"></a>
+  <img src="https://onecandy.biz/EVER_GREEN.svg"></a>
+  <img src="https://onecandy.biz/EARL_GREY.svg"></a>
+  <img src="https://onecandy.biz/GENIUS_BLUEBERRY.svg"></a>
+</div>
+  </body>
+</html>
