@@ -6,11 +6,37 @@
       .img-container {
         text-align: center;
       }
+body {font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+
+.fadein { position:relative; height:332px; width:500px; }
+.fadein img { position:absolute; left:0; top:0; }
+
+.fadelinks, .faderandom { position:relative; height:332px; width:500px; }
+.fadelinks > *, .faderandom > * { position:absolute; left:0; top:0; display:block; }
+
+.multipleslides { position:relative; height:332px; width:500px; float:left; }
+.multipleslides > * { position:absolute; left:0; top:0; display:block; }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="img-container"> <!-- Block parent element -->
-      <img src="user.png" alt="John Doe">
-    </div>
+    <div>
+    <h2>More Simple jQuery Slideshow: Random</h2>
+
+<script>
+  $(function(){
+  $('.faderandom > :gt(0)').hide();
+  setInterval(function(){
+    var rand = Math.floor(Math.random() * ($('.faderandom').children().length-1));
+    $('.faderandom > :first-child').appendTo('.faderandom').fadeOut();
+    $('.faderandom > *').eq(rand).prependTo('.faderandom').fadeIn();
+  }, 3000);
+});
+</script>
+<div class="faderandom">
+  <a href="#"><img src="https://farm3.static.flickr.com/2610/4148988872_990b6da667.jpg"></a>
+  <a href="#"><img src="https://farm3.static.flickr.com/2597/4121218611_040cd7b3f2.jpg"></a>
+  <a href="#"><img src="https://farm3.static.flickr.com/2531/4121218751_ac8bf49d5d.jpg"></a>
+</div>
   </body>
 </html>
