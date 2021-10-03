@@ -11,14 +11,7 @@
 
       body {font-family:Arial, Helvetica, sans-serif; font-size:12px;}
 
-.fadein { position:center; height:332px; width:500px; }
-.fadein img { position:absolute; left:0; top:0; }
 
-.fadelinks, .faderandom { position:center; height:332px; width:500px; }
-.fadelinks > *, .faderandom > * { position:absolute; left:0; top:0; display:block; }
-
-.multipleslides { position:center; height:332px; width:500px; float:center; }
-.multipleslides > * { position:absolute; left:0; top:0; display:block; }
 	    
 	    .alignleft {
 	float: left;
@@ -44,6 +37,15 @@ a:active {
 	    mark {
   background-color: black;
   color: black;
+}
+
+.centerImage
+{
+display: block;
+
+margin-left: auto;
+
+margin-right: auto;
 }
 	  </style>
     
@@ -71,8 +73,11 @@ $(function(){
 });
 </script>
 	    <div id="textbox">
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br>
 	<h2 class="alignleft">
+		<div class="faderandom">
+  <img src="https://onecandy.biz/onecandy.biz-package.png" class="centerImage"></a>
+</div><br><br>
 	INGREDIENTS<br><br>
 PROTEIN GRAIN BLEND (CRISPS [SOY PROTEIN ISOLATE, RICE FLOUR*, ALKALIZED COCOA*], SOY FLOUR*, ROLLED OATS*, ROASTED SOYBEANS*), BROWN RICE SYRUP*, CANE SUGAR*, HIGH OLEIC SUNFLOWER OIL*, VEGETABLE GLYCERIN, ALKALIZED COCOA*, CANE SYRUP*, CHICORY FIBER SYRUP, AGAVE INULIN*, UNSWEETENED CHOCOLATE*, COCOA*, PALM KERNEL SOLIDS*, PALM KERNEL OIL, NATURAL FLAVORS, GUM ARABIC*, SOY LECITHIN, SEA SALT, COCOA BUTTER*.
 <br>*ORGANIC INGREDIENT</h2>
@@ -91,9 +96,5 @@ PROTEIN GRAIN BLEND (CRISPS [SOY PROTEIN ISOLATE, RICE FLOUR*, ALKALIZED COCOA*]
 	<div style="clear: both;"></div>
 </div>
 
-	    
-<div class="faderandom">
-  <img src="https://onecandy.biz/onecandy.biz-package.png"></a>
-</div>
   </body>
 </html>
