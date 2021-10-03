@@ -11,14 +11,7 @@
 
       body {font-family:Arial, Helvetica, sans-serif; font-size:12px;}
 
-.fadein { position:center; height:332px; width:500px; }
-.fadein img { position:absolute; left:0; top:0; }
 
-.fadelinks, .faderandom { position:center; height:332px; width:500px; }
-.fadelinks > *, .faderandom > * { position:absolute; left:0; top:0; display:block; }
-
-.multipleslides { position:center; height:332px; width:500px; float:center; }
-.multipleslides > * { position:absolute; left:0; top:0; display:block; }
 	    
 	    .alignleft {
 	float: left;
@@ -44,6 +37,15 @@ a:active {
 	    mark {
   background-color: black;
   color: black;
+}
+
+.centerImage
+{
+display: block;
+
+margin-left: auto;
+
+margin-right: auto;
 }
 	  </style>
     
@@ -71,9 +73,12 @@ $(function(){
 });
 </script>
 	    <div id="textbox">
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br>
 	<h2 class="alignleft">
-	INGREDIENTS<br><br>
+		<div class="faderandom">
+  <img src="https://onecandy.biz/onecandy.biz-package.png" class="centerImage"></a>
+</div><br><br>
+		INGREDIENTS<br><br>
 PROTEIN CHOCOLATE BLEND (CRISPS [SOY PROTEIN ISOLATE, RICE FLOUR*, ALKALIZED COCOA*], ROLLED OATS*, ROASTED SOYBEANS*, SOY FLOUR*), BROWN RICE SYRUP*, CANE SUGAR*, CHICORY FIBER SYRUP, VEGETABLE GLYCERIN, HIGH OLEIC SUNFLOWER OIL*, ALKALIZED COCOA*, PALM KERNEL OIL, UNSWEETENED CHOCOLATE*, PALM KERNEL SOLIDS*, SOY FLOUR*, NATURAL FLAVORS, SOY LECITHIN*, SEA SALT, BEET JUICE CONCENTRATE (FOR COLOR)*.
 <br>*ORGANIC INGREDIENT</h2>
 		    WEIGHT<br><br>
@@ -91,9 +96,6 @@ PROTEIN CHOCOLATE BLEND (CRISPS [SOY PROTEIN ISOLATE, RICE FLOUR*, ALKALIZED COC
 	<div style="clear: both;"></div>
 </div>
 
-	    
-<div class="faderandom">
-  <img src="https://onecandy.biz/onecandy.biz-package.png"></a>
-</div>
   </body>
 </html>
+
